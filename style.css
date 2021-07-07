@@ -1,0 +1,239 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+}
+@font-face {
+	font-family: circularSTD;
+	src: url(./assets/Circular-Std-Font/Circular-Std-Font.otf) format('opentype');
+}
+
+/* Home section -------------------------------------------*/
+#home {
+	min-height: 60vh;
+
+	background-image: linear-gradient(rgba(5, 5, 5, 4), rgba(0, 0, 0, 0.2)), url(./assets/home-background.jpg);
+	background-size: cover;
+	background-position-x: -12rem;
+}
+hr {
+	height: .4rem;
+	background-color: rgba(71, 71, 71, 0.993);
+	border: none;
+}
+#home-card {
+	display: flex;
+
+	flex-direction: column;
+	width: 90vw;
+	align-items: center;
+	margin: auto;
+	color: white;
+	padding: 3rem 0rem;
+	text-align: center;
+}
+#home-title {
+	font-size: 1.75rem;
+	font-weight: 900;
+}
+#home-card p {
+	font-size: 1.2rem;
+}
+#home-card p:first-of-type {
+	margin: 1rem 0rem;
+}
+#email-input {
+	margin-top: 1rem;
+	width: 82vw;
+	padding: 1rem 1rem 17px;
+}
+#get-started-btn {
+	margin: 1rem;
+	background-color: #e20813;
+	color: white;
+	font-size: 1rem;
+	padding: .8rem;
+	border: none;
+	cursor: pointer;
+}
+/* nav display -------------------------------------------*/
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+	padding: .7rem 1rem;
+}
+#nav-links {
+	display: flex;
+}
+#netflix-logo {
+	width: 7.3rem;
+}
+
+#sign-in-btn {
+	background-color: #e50914;
+	color: white;
+	font-size: .8rem;
+	margin-left: 1rem;
+	padding: .3rem;
+	border: none;
+	border-radius: 4px;
+}
+#sign-in-btn:hover {
+	cursor: pointer;
+}
+#language-select {
+	font-size: 1rem;
+	color: white;
+	background-color: transparent;
+}
+/* thisgh to do this bofore the image */
+#language-select:before {
+	content: "dds";
+	display: block;
+	background: url("https://img.icons8.com/material-outlined/24/000000/globe--v2.png") no-repeat;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 0 6px 0 0;
+}
+/* card section -------------------------------------------*/
+#story-card {
+	background-color: black;
+}
+.card {
+	width: 90%;
+	margin: auto;
+	padding-bottom: 3rem;
+	color: white;
+	text-align: center;
+}
+.card h1 {
+	font-size: 1.625rem;
+	line-height: 1.1;
+	padding-top: 2rem;
+	margin-bottom: .5rem;
+}
+.card p {
+	font-size: 1.625;
+	font-weight: 400;
+}
+/* Your-Tv section -------------------------------------------*/
+
+.your-tv {
+	color: white;
+	text-align: center;
+}
+#your-tv-animation img {
+	position: relative;
+	width: 90vw;
+	z-index: 1;
+}
+#your-tv-animation {
+	position: relative;
+}
+#your-tv-animation video {
+	position: absolute;
+	top: 4.4rem;
+	left: 3.7rem;
+	width: 66vw;
+}
+
+/* Offline section -------------------------------------------*/
+.offline-card {
+	position: relative;
+}
+.offline-card img {
+	width: 28rem;
+}
+#offline-animation {
+	background-color: black;
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	left: 5.2rem;
+	top: 21rem;
+	border: 3px solid #222;
+	border-radius: 7px;
+	padding: .6rem 4.5rem;
+}
+#offline-animation img {
+	width: 2rem;
+}
+
+/* everywhere section -------------------------------------------*/
+#everywhere-animation {
+	position: relative;
+}
+#everywhere-animation img {
+	width: 100%;
+	position: relative;
+	margin-top: 3rem;
+	z-index: 2;
+}
+#everywhere-animation video {
+	position: absolute;
+	left: 5rem;
+	top: 5rem;
+	width: 65%;
+	z-index: 1;
+}
+/* kids section -------------------------------------------*/
+#kids-animation img {
+	width: 100%;
+}
+
+/* questions section -------------------------------------------*/
+.question-answer-section {
+	background-color: black;
+	color: white;
+}
+.question-answer-section h1 {
+	text-align: center;
+	padding: 1.6rem 0rem;
+	font-size: 1.9rem;
+}
+.question{
+	margin: .5rem 0rem;
+}
+
+.question button {
+	font-size: 1.2rem;
+	cursor: pointer;
+	width: 100%;
+	padding: 1rem 1rem;
+	text-align: start;
+	color: white;
+	background-color: #303030;
+	border: none;
+	position: relative;
+}
+
+#icon{
+	position: absolute;
+	right: 1.2rem;
+	font-weight: 100;
+	top: .1rem;
+	font-size: 2.7rem;
+	color: #646464;
+	
+
+}
+/* Answer  */
+.answer{
+	background-color: #303030;
+	margin-top: 3px;
+	padding: 1.3rem;
+	font-size: 1.225rem;
+	display: none;
+}
+
+/* classList ******************** */
+.rotateIcon {
+	font-size: 60px;
+	color: red;
+}
+.toggleQuestionDisplay{
+	display: block;
+}
