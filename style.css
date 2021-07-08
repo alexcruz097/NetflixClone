@@ -17,14 +17,14 @@
 	background-position-x: -12rem;
 }
 hr {
-	height: .4rem;
-	background-color: rgba(71, 71, 71, 0.993);
+	height: .5rem;
+	background-color: #222;
 	border: none;
 }
 #home-card {
 	display: flex;
-
 	flex-direction: column;
+	height: 40vh;
 	width: 90vw;
 	align-items: center;
 	margin: auto;
@@ -42,17 +42,21 @@ hr {
 #home-card p:first-of-type {
 	margin: 1rem 0rem;
 }
-#email-input {
+#email-input,
+#questions-get-started input {
 	margin-top: 1rem;
 	width: 82vw;
 	padding: 1rem 1rem 17px;
+	border-radius: 3px;
+	border: none;
 }
-#get-started-btn {
+#get-started-btn,
+#questions-get-started button {
 	margin: 1rem;
 	background-color: #e20813;
 	color: white;
 	font-size: 1rem;
-	padding: .8rem;
+	padding: .5rem 1.3rem;
 	border: none;
 	cursor: pointer;
 }
@@ -105,19 +109,20 @@ nav {
 .card {
 	width: 90%;
 	margin: auto;
-	padding-bottom: 3rem;
+	padding-bottom: 2.5rem;
 	color: white;
 	text-align: center;
 }
 .card h1 {
 	font-size: 1.625rem;
 	line-height: 1.1;
-	padding-top: 2rem;
+	padding-top: 2.5rem;
 	margin-bottom: .5rem;
 }
 .card p {
-	font-size: 1.625;
+	font-size: 3.625;
 	font-weight: 400;
+	padding-top: 1rem;
 }
 /* Your-Tv section -------------------------------------------*/
 
@@ -169,19 +174,23 @@ nav {
 #everywhere-animation img {
 	width: 100%;
 	position: relative;
-	margin-top: 3rem;
+	margin-top: .5rem;
 	z-index: 2;
 }
 #everywhere-animation video {
 	position: absolute;
-	left: 5rem;
-	top: 5rem;
+	left: 4.6rem;
+	top: 2rem;
 	width: 65%;
 	z-index: 1;
 }
 /* kids section -------------------------------------------*/
 #kids-animation img {
 	width: 100%;
+}
+.kids-card p {
+	font-size: 1.33rem;
+	padding-bottom: 1rem;
 }
 
 /* questions section -------------------------------------------*/
@@ -194,7 +203,7 @@ nav {
 	padding: 1.6rem 0rem;
 	font-size: 1.9rem;
 }
-.question{
+.question {
 	margin: .5rem 0rem;
 }
 
@@ -210,30 +219,71 @@ nav {
 	position: relative;
 }
 
-#icon{
+#icon {
 	position: absolute;
 	right: 1.2rem;
 	font-weight: 100;
 	top: .1rem;
 	font-size: 2.7rem;
 	color: #646464;
-	
-
 }
 /* Answer  */
-.answer{
+.answer {
 	background-color: #303030;
 	margin-top: 3px;
 	padding: 1.3rem;
 	font-size: 1.225rem;
 	display: none;
 }
+#questions-get-started {
+	padding: 2rem 0rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 95%;
+	margin: auto;
+}
+#get-started h3 {
+	font-size: 1.4rem;
+}
+
+
+
+/* footer section -------------------------------------------*/
+#footer {
+	background-color: black;
+	color: #575757;
+}
+#footer-structure {
+	width: 95%;
+	margin: auto;
+}
+#footer-structure p {
+	padding: 2rem 0rem;
+}
+#footer-links {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	list-style: none;
+}
+#footer-links li {
+	margin: .3rem 0rem;
+}
+#footer-links li a {
+	color: #575757;
+	text-decoration: none;
+}
+#footer-links li a:hover {
+	text-decoration: underline;
+}
+
 
 /* classList ******************** */
 .rotateIcon {
-	font-size: 60px;
-	color: red;
+	transform: rotate(45deg);
 }
-.toggleQuestionDisplay{
+.toggleQuestionDisplay {
 	display: block;
+	
 }
