@@ -150,18 +150,18 @@ nav {
 	position: relative;
 }
 .offline-card img {
-	width: 28rem;
+	width: 90vw;
 }
 #offline-animation {
 	background-color: black;
 	display: flex;
 	justify-content: space-around;
 	position: absolute;
-	left: 5.2rem;
+	left: 2rem;
 	top: 21rem;
 	border: 3px solid #222;
 	border-radius: 7px;
-	padding: .6rem 4.5rem;
+	padding: .3rem 3rem;
 }
 #offline-animation img {
 	width: 2rem;
@@ -248,8 +248,6 @@ nav {
 	font-size: 1.4rem;
 }
 
-
-
 /* footer section -------------------------------------------*/
 #footer {
 	background-color: black;
@@ -278,12 +276,10 @@ nav {
 	text-decoration: underline;
 }
 
-
 /* classList ******************** */
 .rotateIcon {
 	transform: rotate(45deg);
 }
 .toggleQuestionDisplay {
 	display: block;
-	
 }
