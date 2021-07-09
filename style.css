@@ -154,8 +154,10 @@ nav {
 }
 #offline-animation {
 	background-color: black;
-	display: flex;
-	justify-content: space-around;
+display: flex;
+width: 50vw;
+justify-content: space-between;
+
 	position: absolute;
 	left: 2rem;
 	top: 21rem;
@@ -163,8 +165,14 @@ nav {
 	border-radius: 7px;
 	padding: .3rem 3rem;
 }
+#download-animation{
+
+height: 100%;
+
+}
 #offline-animation img {
 	width: 2rem;
+
 }
 
 /* everywhere section -------------------------------------------*/
@@ -254,7 +262,7 @@ nav {
 	color: #575757;
 }
 #footer-structure {
-	width: 95%;
+	width: 80vw;
 	margin: auto;
 }
 #footer-structure p {

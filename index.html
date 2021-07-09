@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Netflix Clone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/doodle/240/000000/netflix-desktop-app.png">
+
 </head>
 
 <body>
@@ -14,10 +16,7 @@
         <nav id="nav-bar">
             <img id="netflix-logo" src="./assets/netflix-logo.png" alt="netflix logo">
             <div id="nav-links">
-                <select id="language-select">
-                    <option>English</option>
-                    <option>ESPAÑOL</option>
-                </select>
+                 <div id="google_translate_element"></div>
                 <button id="sign-in-btn">Sign In</button>
             </div>
         </nav>
@@ -49,11 +48,15 @@
             <p>Save your favorites easily and always have something to watch.</p>
             <img src="./assets/offline-card-img.jpg" src="your tv">
             <div id="offline-animation">
-                <img src="./assets/strangers-things-img.png" alt=''>
+                <img src="./assets/strangers-things-img.png" alt='stranger things image'>
                 <div id="offline-animation-title">
                     <h4>Stranger Things</h4>
                     <p>Downloading...</p>
                 </div>
+                <div >
+<img  src="./assets/gif/download-icon.gif" alt="" srcset="" id="download-animation">
+                </div>
+                
             </div>
         </div>
         <hr>
@@ -180,13 +183,25 @@
                 <li><a href="/">Legal Notices</a></li>
                 <li><a href="/">Only on Netflix</a></li>
             </ul>
-            <select id="language-select">
-                <option>English</option>
-                <option>ESPAÑOL</option>
-            </select>
-        </div>
+            <!-- Google Translate -->
+      
+   <div id="google_translate_element"></div>
+
     </section>
-    <script src="./script.js"></script>
-</body>
+    
+<!-- google translate section -->
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+<script   type="text/javascript" src="./script.js" ></script>
 
 </html>
