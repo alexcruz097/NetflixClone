@@ -1,7 +1,7 @@
 const questionIcon = document.querySelectorAll('#icon');
 const questions = document.querySelectorAll('.questionBTN');
 const answers = document.querySelectorAll('.answer');
-
+const videos = document.querySelectorAll("video");
 
 
 questions.forEach((question, index) => {
@@ -15,3 +15,8 @@ questions.forEach((question, index) => {
 
 // remove
 
+videos.forEach((video) => {
+	video.autoplay;
+	video.loop = true;
+
+})

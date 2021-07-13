@@ -3,11 +3,14 @@
 	padding: 0;
 	box-sizing: 0;
 }
-@font-face {
-	font-family: circularSTD;
-	src: url(./assets/Circular-Std-Font/Circular-Std-Font.otf) format('opentype');
+body{
+	font-family: 'netflix-font', cursive;
+	
 }
-
+@font-face {
+	font-family: 'netflix-font';
+	src: url(./assets/netflix-sans-cufonfonts/NetflixSansRegular.ttf);
+}
 /* Home section -------------------------------------------*/
 #home {
 	min-height: 60vh;
@@ -56,7 +59,7 @@ hr {
 	background-color: #e20813;
 	color: white;
 	font-size: 1rem;
-	padding: .5rem 1.3rem;
+	padding: .6rem 1.3rem;
 	border: none;
 	cursor: pointer;
 }
@@ -114,25 +117,26 @@ nav {
 	text-align: center;
 }
 .card h1 {
-	font-size: 1.625rem;
+	font-size: 1.725rem;
 	line-height: 1.1;
-	padding-top: 2.5rem;
-	margin-bottom: .5rem;
+	padding-top: 2.7rem;
+	margin-bottom: 1rem;
 }
 .card p {
-	font-size: 3.625;
+	font-size: 1.265rem;
 	font-weight: 400;
-	padding-top: 1rem;
 }
 /* Your-Tv section -------------------------------------------*/
 
 .your-tv {
 	color: white;
 	text-align: center;
+
 }
 #your-tv-animation img {
-	position: relative;
-	width: 90vw;
+
+	height: 20rem;
+	width: 87vw;
 	z-index: 1;
 }
 #your-tv-animation {
@@ -150,29 +154,25 @@ nav {
 	position: relative;
 }
 .offline-card img {
-	width: 90vw;
+	width: 85vw;
 }
 #offline-animation {
 	background-color: black;
-display: flex;
-width: 50vw;
-justify-content: space-between;
-
+	display: flex;
+	width: 45vw;
+	justify-content: space-between;
 	position: absolute;
 	left: 2rem;
-	top: 21rem;
-	border: 3px solid #222;
+	bottom: 6rem;
+	border: 2px solid #222;
 	border-radius: 7px;
 	padding: .3rem 3rem;
 }
-#download-animation{
-
-height: 100%;
-
+#download-animation {
+	height: 100%;
 }
 #offline-animation img {
-	width: 2rem;
-
+	width: 2.5rem;
 }
 
 /* everywhere section -------------------------------------------*/
@@ -208,8 +208,8 @@ height: 100%;
 }
 .question-answer-section h1 {
 	text-align: center;
-	padding: 1.6rem 0rem;
-	font-size: 1.9rem;
+	padding: 2.6rem 0rem 1.2rem;
+	font-size: 1.8rem;
 }
 .question {
 	margin: .5rem 0rem;
@@ -219,7 +219,7 @@ height: 100%;
 	font-size: 1.2rem;
 	cursor: pointer;
 	width: 100%;
-	padding: 1rem 1rem;
+	padding: .96rem 1rem;
 	text-align: start;
 	color: white;
 	background-color: #303030;
@@ -238,7 +238,7 @@ height: 100%;
 /* Answer  */
 .answer {
 	background-color: #303030;
-	margin-top: 3px;
+	margin-top: 2px;
 	padding: 1.3rem;
 	font-size: 1.225rem;
 	display: none;
@@ -252,8 +252,10 @@ height: 100%;
 	width: 95%;
 	margin: auto;
 }
-#get-started h3 {
-	font-size: 1.4rem;
+#questions-get-started h3 {
+	width: 80%;
+	font-size: 1.35rem;
+	font-weight: 100;
 }
 
 /* footer section -------------------------------------------*/
@@ -262,11 +264,13 @@ height: 100%;
 	color: #575757;
 }
 #footer-structure {
-	width: 80vw;
+	width: 75vw;
 	margin: auto;
+	padding-bottom: 5.7rem;
 }
 #footer-structure p {
-	padding: 2rem 0rem;
+	font-size: 1.2rem;
+	padding: 3rem 0rem 1.9rem;
 }
 #footer-links {
 	display: grid;
@@ -274,7 +278,8 @@ height: 100%;
 	list-style: none;
 }
 #footer-links li {
-	margin: .3rem 0rem;
+	margin: .45rem 0rem;
+	font-weight: 100;
 }
 #footer-links li a {
 	color: #575757;

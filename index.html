@@ -8,7 +8,8 @@
     <title>Netflix Clone</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://img.icons8.com/doodle/240/000000/netflix-desktop-app.png">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <nav id="nav-bar">
             <img id="netflix-logo" src="./assets/netflix-logo.png" alt="netflix logo">
             <div id="nav-links">
-                 <div id="google_translate_element"></div>
+                <div id="google_translate_element"></div>
                 <button id="sign-in-btn">Sign In</button>
             </div>
         </nav>
@@ -50,13 +51,12 @@
             <div id="offline-animation">
                 <img src="./assets/strangers-things-img.png" alt='stranger things image'>
                 <div id="offline-animation-title">
-                    <h4>Stranger Things</h4>
-                    <p>Downloading...</p>
+                    <h4>Stranger Things<br><span>downloading...</span></h4>
                 </div>
-                <div >
-<img  src="./assets/gif/download-icon.gif" alt="" srcset="" id="download-animation">
+                <div>
+                    <img src="./assets/gif/download-icon.gif" alt="" srcset="" id="download-animation">
                 </div>
-                
+
             </div>
         </div>
         <hr>
@@ -117,6 +117,7 @@
                         watch instantly on the web at netflix.com from your personal computer or on any
                         internet-connected device that offers the Netflix app, including smart TVs, smartphones,
                         tablets, streaming media players and game consoles.
+                        <br>
                         <br>
                         You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use
                         downloads to watch while you're on the go and without an internet connection. Take Netflix with
@@ -184,24 +185,25 @@
                 <li><a href="/">Only on Netflix</a></li>
             </ul>
             <!-- Google Translate -->
-      
-   <div id="google_translate_element"></div>
+
+            <div id="google_translate_element"></div>
 
     </section>
-    
-<!-- google translate section -->
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script>
+    <!-- google translate section -->
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
 
 
-<script   type="text/javascript" src="./script.js" ></script>
+    <script type="text/javascript" src="./script.js"></script>
 
 </html>
