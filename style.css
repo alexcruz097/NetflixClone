@@ -3,9 +3,8 @@
 	padding: 0;
 	box-sizing: 0;
 }
-body{
+body {
 	font-family: 'netflix-font', cursive;
-	
 }
 @font-face {
 	font-family: 'netflix-font';
@@ -13,11 +12,10 @@ body{
 }
 /* Home section -------------------------------------------*/
 #home {
-	min-height: 60vh;
-
+	min-height: 59.6vh;
 	background-image: linear-gradient(rgba(5, 5, 5, 4), rgba(0, 0, 0, 0.2)), url(./assets/home-background.jpg);
 	background-size: cover;
-	background-position-x: -12rem;
+	background-position-x: -16rem;
 }
 hr {
 	height: .5rem;
@@ -32,18 +30,18 @@ hr {
 	align-items: center;
 	margin: auto;
 	color: white;
-	padding: 3rem 0rem;
+	padding: 3rem 0rem 0rem;
 	text-align: center;
 }
 #home-title {
-	font-size: 1.75rem;
+	font-size: 1.65rem;
 	font-weight: 900;
 }
 #home-card p {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 #home-card p:first-of-type {
-	margin: 1rem 0rem;
+	margin: .5rem 0rem .9rem;
 }
 #email-input,
 #questions-get-started input {
@@ -59,7 +57,7 @@ hr {
 	background-color: #e20813;
 	color: white;
 	font-size: 1rem;
-	padding: .6rem 1.3rem;
+	padding: .7rem 1.3rem;
 	border: none;
 	cursor: pointer;
 }
@@ -75,13 +73,13 @@ nav {
 	display: flex;
 }
 #netflix-logo {
-	width: 7.3rem;
+	width: 6rem;
 }
 
 #sign-in-btn {
 	background-color: #e50914;
 	color: white;
-	font-size: .8rem;
+	font-size: .9rem;
 	margin-left: 1rem;
 	padding: .3rem;
 	border: none;
@@ -112,31 +110,30 @@ nav {
 .card {
 	width: 90%;
 	margin: auto;
-	padding-bottom: 2.5rem;
+	padding: 3.125rem 1.171rem;
 	color: white;
 	text-align: center;
 }
 .card h1 {
-	font-size: 1.725rem;
+	font-size: 1.625rem;
 	line-height: 1.1;
-	padding-top: 2.7rem;
-	margin-bottom: 1rem;
 }
 .card p {
-	font-size: 1.265rem;
+	font-size: 1.125rem;
 	font-weight: 400;
+	padding: .843rem 0rem 0rem;
 }
 /* Your-Tv section -------------------------------------------*/
 
 .your-tv {
 	color: white;
 	text-align: center;
-
+	padding-bottom: 2.1rem;
 }
 #your-tv-animation img {
-
-	height: 20rem;
-	width: 87vw;
+	position: relative;
+	height: 15.825rem;
+	width: 21.100rem;
 	z-index: 1;
 }
 #your-tv-animation {
@@ -144,8 +141,8 @@ nav {
 }
 #your-tv-animation video {
 	position: absolute;
-	top: 4.4rem;
-	left: 3.7rem;
+	top: 3.2rem;
+	left: 2.8rem;
 	width: 66vw;
 }
 
@@ -154,28 +151,42 @@ nav {
 	position: relative;
 }
 .offline-card img {
-	width: 85vw;
+	width: 90vw;
 }
 #offline-animation {
 	background-color: black;
 	display: flex;
-	width: 45vw;
-	justify-content: space-between;
+	width: 69vw;
+	justify-content: space-around;
+	align-items: center;
 	position: absolute;
-	left: 2rem;
-	bottom: 6rem;
-	border: 2px solid #222;
+	left: 3.3rem;
+	bottom: 4.4rem;
+	border: 3px solid #222;
 	border-radius: 7px;
-	padding: .3rem 3rem;
+	padding: .24rem 0rem;
 }
 #download-animation {
-	height: 100%;
+object-fit: cover;
 }
 #offline-animation img {
-	width: 2.5rem;
-}
+	width: 2.144rem;
+	height: 3rem;
 
+}
+#offline-animation-title h4 {
+	font-size: .9rem;
+		text-align: start;
+}
+#offline-animation-title h4 span {
+	color: #0071eb;
+	font-size: .75rem;
+
+}
 /* everywhere section -------------------------------------------*/
+.everywhere-card{
+	height: 45.5vh;
+}
 #everywhere-animation {
 	position: relative;
 }
@@ -187,29 +198,32 @@ nav {
 }
 #everywhere-animation video {
 	position: absolute;
-	left: 4.6rem;
+	left: 4rem;
 	top: 2rem;
-	width: 65%;
+	width: 60%;
 	z-index: 1;
 }
 /* kids section -------------------------------------------*/
+#kids-animation{
+	height: 34.3vh;
+}
 #kids-animation img {
 	width: 100%;
 }
-.kids-card p {
-	font-size: 1.33rem;
-	padding-bottom: 1rem;
-}
+
 
 /* questions section -------------------------------------------*/
 .question-answer-section {
 	background-color: black;
 	color: white;
+	height: 89vh;
 }
 .question-answer-section h1 {
 	text-align: center;
-	padding: 2.6rem 0rem 1.2rem;
-	font-size: 1.8rem;
+	padding: 2.6rem 0rem .6rem;
+	font-size: 1.63em;
+	width: 85%;
+margin: auto;
 }
 .question {
 	margin: .5rem 0rem;
@@ -238,13 +252,12 @@ nav {
 /* Answer  */
 .answer {
 	background-color: #303030;
-	margin-top: 2px;
+	margin-bottom: 3px;
 	padding: 1.3rem;
 	font-size: 1.225rem;
 	display: none;
 }
 #questions-get-started {
-	padding: 2rem 0rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -253,24 +266,28 @@ nav {
 	margin: auto;
 }
 #questions-get-started h3 {
-	width: 80%;
-	font-size: 1.35rem;
+	width: 90%;
+	font-size: 1.125rem;
 	font-weight: 100;
+	padding-top: 1rem;
 }
 
 /* footer section -------------------------------------------*/
 #footer {
 	background-color: black;
 	color: #575757;
+	padding: 50px 18.75px 0px;
 }
 #footer-structure {
 	width: 75vw;
 	margin: auto;
-	padding-bottom: 5.7rem;
+	padding-bottom: 5.5rem;
+
 }
 #footer-structure p {
-	font-size: 1.2rem;
-	padding: 3rem 0rem 1.9rem;
+	font-size: 1rem;
+	margin-bottom: 2rem;
+
 }
 #footer-links {
 	display: grid;
@@ -280,6 +297,7 @@ nav {
 #footer-links li {
 	margin: .45rem 0rem;
 	font-weight: 100;
+	font-size: .8rem;
 }
 #footer-links li a {
 	color: #575757;
