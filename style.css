@@ -3,6 +3,9 @@
 	padding: 0;
 	box-sizing: 0;
 }
+section{
+	position: relative;
+}
 body {
 	font-family: 'netflix-font', cursive;
 }
@@ -25,7 +28,7 @@ hr {
 #home-card {
 	display: flex;
 	flex-direction: column;
-	height: 40vh;
+	min-height: 40vh;
 	width: 90vw;
 	align-items: center;
 	margin: auto;
@@ -216,7 +219,7 @@ object-fit: cover;
 .question-answer-section {
 	background-color: black;
 	color: white;
-	height: 89vh;
+	min-height: 89vh;
 }
 .question-answer-section h1 {
 	text-align: center;
