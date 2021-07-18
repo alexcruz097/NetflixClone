@@ -3,7 +3,8 @@
 	padding: 0;
 	box-sizing: 0;
 }
-section{
+
+section {
 	position: relative;
 }
 body {
@@ -170,24 +171,22 @@ nav {
 	padding: .24rem 0rem;
 }
 #download-animation {
-object-fit: cover;
+	object-fit: cover;
 }
 #offline-animation img {
 	width: 2.144rem;
 	height: 3rem;
-
 }
 #offline-animation-title h4 {
 	font-size: .9rem;
-		text-align: start;
+	text-align: start;
 }
 #offline-animation-title h4 span {
 	color: #0071eb;
 	font-size: .75rem;
-
 }
 /* everywhere section -------------------------------------------*/
-.everywhere-card{
+.everywhere-card {
 	height: 45.5vh;
 }
 #everywhere-animation {
@@ -207,13 +206,12 @@ object-fit: cover;
 	z-index: 1;
 }
 /* kids section -------------------------------------------*/
-#kids-animation{
+#kids-animation {
 	height: 34.3vh;
 }
 #kids-animation img {
 	width: 100%;
 }
-
 
 /* questions section -------------------------------------------*/
 .question-answer-section {
@@ -226,7 +224,7 @@ object-fit: cover;
 	padding: 2.6rem 0rem .6rem;
 	font-size: 1.63em;
 	width: 85%;
-margin: auto;
+	margin: auto;
 }
 .question {
 	margin: .5rem 0rem;
@@ -255,7 +253,7 @@ margin: auto;
 /* Answer  */
 .answer {
 	background-color: #303030;
-	margin-bottom: 3px;
+	margin: 1px 0 3px;
 	padding: 1.3rem;
 	font-size: 1.225rem;
 	display: none;
@@ -280,22 +278,23 @@ margin: auto;
 	background-color: black;
 	color: #575757;
 	padding: 50px 18.75px 0px;
+	height: 54vh;
 }
 #footer-structure {
 	width: 75vw;
 	margin: auto;
 	padding-bottom: 5.5rem;
-
 }
-#footer-structure p {
-	font-size: 1rem;
-	margin-bottom: 2rem;
-
+#footer-structure #phone {
+	font-size: 1.1rem;
+	color: #928e8e;
+	text-decoration: none;
 }
 #footer-links {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	list-style: none;
+	margin-top: 1.7rem;
 }
 #footer-links li {
 	margin: .45rem 0rem;
@@ -306,7 +305,8 @@ margin: auto;
 	color: #575757;
 	text-decoration: none;
 }
-#footer-links li a:hover {
+#footer-links li a:hover,
+#footer-structure #phone:hover {
 	text-decoration: underline;
 }
 
@@ -317,6 +317,145 @@ margin: auto;
 .toggleQuestionDisplay {
 	display: block;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
+	/* Home section -------------------------------------------*/
+	#home {
+		min-height: 61.1vh;
+		background-position-x: -12.5rem;
+	}
+	#home-card {
+		justify-content: center;
+		padding: 2.4rem 0 0;
+	}
+	#home-card p {
+		padding-top: .3rem;
+		width: 70vw;
+	}
 
+	#email-input,
+	#questions-get-started input {
+		margin-top: .6rem;
+		font-size: 17px;
+		width: 78vw;
+		padding: 1rem 1rem 14px;
+		border-radius: 1.5px;
+	}
+	#get-started-btn,
+	#questions-get-started button {
+		margin: 1rem;
+		background-color: #e20813;
+		color: white;
+		font-size: 1rem;
+		padding: .6rem 1.3rem;
+	}
+
+	/* nav display -------------------------------------------*/
+	nav {
+		justify-content: space-around;
+		padding: .7rem 0;
+	}
+
+	#netflix-logo {
+		width: 6.3rem;
+	}
+
+	#sign-in-btn {
+		padding: .3rem .5rem;
+	}
+	/* Your-Tv section -------------------------------------------*/
+
+	.your-tv {
+		padding-bottom: 1.7rem;
+	}
+	#your-tv-animation img {
+		height: 39vh;
+		width: 87vw;
+	}
+	#your-tv-animation video {
+		position: absolute;
+		top: 3.2rem;
+		left: 3.5rem;
+	}
+	/* Offline section -------------------------------------------*/
+
+	.offline-card img {
+		width: 82vw;
+	}
+	#offline-animation {
+		width: 55vw;
+		left: 5.7rem;
+		bottom: 5.4rem;
+		padding: .24rem 0rem;
+	}
+
+	/* everywhere section -------------------------------------------*/
+	.everywhere-card {
+		height: 50vh;
+	}
+
+	#everywhere-animation img {
+		width: 85vw;
+	}
+	#everywhere-animation video {
+		left: 5.5rem;
+	}
+	/* kids section -------------------------------------------*/
+	#kids-animation {
+		height: 41.5vh;
+	}
+	#kids-animation img {
+		width: 90vw;
+	}
+
+	/* questions section -------------------------------------------*/
+	.question-answer-section {
+		min-height: 70vh;
+	}
+	.question-answer-section h1 {
+		text-align: center;
+		padding: 2.6rem 0rem 1rem;
+	}
+	/* Answer  */
+	.answer {
+		padding: 1rem;
+		font-size: 1.17rem;
+	}
+	#questions-get-started {
+		padding-bottom: 2.45rem;
+	}
+	/* footer section -------------------------------------------*/
+
+	#footer {
+		height: 52vh;
+	}
+	#footer-structure {
+		width: 75vw;
+		margin: auto;
+		padding-bottom: 5.5rem;
+	}
+	#footer-structure #phone {
+		font-size: 1.1rem;
+		color: #928e8e;
+		text-decoration: none;
+	}
+	#footer-links {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		list-style: none;
+		margin-top: 1.7rem;
+	}
+	#footer-links li {
+		margin: .45rem 0rem;
+		font-weight: 100;
+		font-size: .8rem;
+	}
+	#footer-links li a {
+		color: #575757;
+		text-decoration: none;
+	}
+	#footer-links li a:hover,
+	#footer-structure #phone:hover {
+		text-decoration: underline;
+	}
 }
+
