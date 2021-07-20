@@ -136,8 +136,7 @@ nav {
 }
 #your-tv-animation img {
 	position: relative;
-	height: 15.825rem;
-	width: 21.100rem;
+	width: 90vw;
 	z-index: 1;
 }
 #your-tv-animation {
@@ -145,8 +144,8 @@ nav {
 }
 #your-tv-animation video {
 	position: absolute;
-	top: 3.2rem;
-	left: 2.8rem;
+	top: 6.7vh;
+	left: 13vw;
 	width: 66vw;
 }
 
@@ -193,16 +192,16 @@ nav {
 	position: relative;
 }
 #everywhere-animation img {
-	width: 100%;
+	width: 90vw;
 	position: relative;
 	margin-top: .5rem;
 	z-index: 2;
 }
 #everywhere-animation video {
 	position: absolute;
-	left: 4rem;
+	left: 17vw;
 	top: 2rem;
-	width: 60%;
+	width: 55vw;
 	z-index: 1;
 }
 /* kids section -------------------------------------------*/
@@ -279,11 +278,11 @@ nav {
 	color: #575757;
 	padding: 50px 18.75px 0px;
 	height: 54vh;
+	padding-bottom: 5.5rem;
 }
 #footer-structure {
 	width: 75vw;
 	margin: auto;
-	padding-bottom: 5.5rem;
 }
 #footer-structure #phone {
 	font-size: 1.1rem;
@@ -367,14 +366,12 @@ nav {
 	.your-tv {
 		padding-bottom: 1.7rem;
 	}
-	#your-tv-animation img {
-		height: 39vh;
-		width: 87vw;
-	}
+
 	#your-tv-animation video {
+		width: 72vw;
 		position: absolute;
-		top: 3.2rem;
-		left: 3.5rem;
+		top: 4.5rem;
+		left: 3.3rem;
 	}
 	/* Offline section -------------------------------------------*/
 
@@ -397,7 +394,8 @@ nav {
 		width: 85vw;
 	}
 	#everywhere-animation video {
-		left: 5.5rem;
+		width: 52vw;
+		left: 17vw;
 	}
 	/* kids section -------------------------------------------*/
 	#kids-animation {
@@ -457,5 +455,22 @@ nav {
 	#footer-structure #phone:hover {
 		text-decoration: underline;
 	}
-}
+	@media screen and (min-width: 501px) {
+		/* footer style */
 
+		/* footer section -------------------------------------------*/
+		#footer {
+			height: 42.5vh;
+			padding-bottom: 0;
+		}
+	
+		#footer-structure #phone{
+			font-size: 1rem;
+		}
+		#footer-links {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+	@media screen and (min-width: 550px) {
+	}
+}
