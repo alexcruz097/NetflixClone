@@ -9,6 +9,7 @@ section {
 }
 body {
 	font-family: 'netflix-font', cursive;
+	background-color: black;
 }
 @font-face {
 	font-family: 'netflix-font';
@@ -165,7 +166,7 @@ nav {
 	position: absolute;
 	left: 3.3rem;
 	bottom: 4.4rem;
-	border: 3px solid #222;
+	border: 2px solid #404040;
 	border-radius: 7px;
 	padding: .24rem 0rem;
 }
@@ -247,7 +248,7 @@ nav {
 	font-weight: 100;
 	top: .1rem;
 	font-size: 2.7rem;
-	color: #646464;
+	color: white;
 }
 /* Answer  */
 .answer {
@@ -455,22 +456,214 @@ nav {
 	#footer-structure #phone:hover {
 		text-decoration: underline;
 	}
-	@media screen and (min-width: 501px) {
-		/* footer style */
+}
+@media screen and (min-width: 501px) {
+	/* footer style */
 
-		/* footer section -------------------------------------------*/
-		#footer {
-			height: 42.5vh;
-			padding-bottom: 0;
-		}
-	
-		#footer-structure #phone{
-			font-size: 1rem;
-		}
-		#footer-links {
-			grid-template-columns: 1fr 1fr 1fr;
-		}
+	/* footer section -------------------------------------------*/
+	#footer {
+		height: 42.5vh;
+		padding-bottom: 0;
 	}
-	@media screen and (min-width: 550px) {
+
+	#footer-structure #phone {
+		font-size: 1rem;
+	}
+	#footer-links {
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
+@media screen and (min-width: 550px) {
+	/* nav display -------------------------------------------*/
+	#netflix-logo {
+		width: 9.1rem;
+	}
+	#sign-in-btn {
+		font-size: 1.1rem;
+		padding: .4rem .9rem;
+	}
+
+	/* Home section -------------------------------------------*/
+	#home {
+		min-height: 90vh;
+		background-position-x: 49.5%;
+	}
+	#home-card {
+		min-height: 65vh;
+		width: 85vw;
+		align-items: center;
+		padding: 3.7rem 0rem 0rem;
+	}
+	#home-title {
+		font-size: 3.15rem;
+	}
+	#home-card p:nth-of-type(2) {
+		width: 70%;
+		font-size: 1.15rem;
+	}
+	#home-card p:first-of-type {
+		font-size: 1.565rem;
+	}
+	#email-input,
+	#questions-get-started input {
+		width: 80vw;
+		padding: 1rem 1rem 1rem;
+		border-radius: 3px;
+		border: none;
+	}
+
+	/* card section -------------------------------------------*/
+
+	.card {
+		width: 80%;
+		padding: 3.125rem 1.171rem;
+	}
+	.card h1 {
+		font-size: 2.5rem;
+	}
+	.card p {
+		font-size: 1.25rem;
+	}
+	/* Your-Tv section -------------------------------------------*/
+
+	.your-tv {
+		padding: 3.8rem 0;
+	}
+	#your-tv-animation img {
+		position: relative;
+		width: 80vw;
+	}
+
+	#your-tv-animation video {
+		position: absolute;
+		top: 8vh;
+		left: 10vw;
+		width: 60vw;
+	}
+
+	/* Offline section -------------------------------------------*/
+	.offline-card {
+		padding-top: 4rem;
+	}
+	.offline-card img {
+		width: 83vw;
+	}
+	#offline-animation {
+		width: 54vw;
+		left: 17.3vw;
+		bottom: 4.7rem;
+		padding: .5rem 0rem;
+	}
+	#download-animation {
+		object-fit: cover;
+	}
+	#offline-animation img {
+		width: 3.144rem;
+		height: 4rem;
+	}
+	#offline-animation-title h4 {
+		font-size: 1rem;
+		text-align: start;
+	}
+	#offline-animation-title h4 span {
+		font-size: .9rem;
+	}
+
+	/* everywhere section -------------------------------------------*/
+	.everywhere-card {
+		height: 58vh;
+		padding-top: 5rem;
+	}
+
+	#everywhere-animation img {
+		width: 82vw;
+	}
+	#everywhere-animation video {
+		left: 15vw;
+		top: 2rem;
+		width: 51vw;
+	}
+	/* kids section -------------------------------------------*/
+	.kids-card {
+		padding-top: 5rem;
+	}
+	#kids-animation {
+		padding-top: .7rem;
+		height: 43vh;
+	}
+	#kids-animation img {
+		width: 82vw;
+	}
+
+	/* questions section -------------------------------------------*/
+	.question-answer-section {
+		width: 80vw;
+		margin: auto;
+		padding-bottom: 1rem;
+	}
+	.question-answer-section h1 {
+		padding: 4.3rem 0rem .6rem;
+		font-size: 2.5rem;
+		width: 80%;
+	}
+	.question {
+		width: 90%;
+		margin: .7rem auto;
+		list-style: none;
+	}
+
+	.question button {
+		font-size: 1.25rem;
+		padding: 1rem 1rem;
+	}
+	/* Answer  */
+	.answer {
+		padding: 1.5rem 1.3rem;
+		font-size: 1.25rem;
+	}
+
+	#questions-get-started h3 {
+		width: 90%;
+		font-size: 1.2rem;
+		padding-top: 2.5rem 1rem;
+	}
+	#questions-get-started input {
+		width: 95%;
+		margin-top: .9rem;
+	}
+
+
+	/* footer section -------------------------------------------*/
+
+	#footer {
+		height: 2vh;
+	}
+	#footer-structure {
+		width: 75vw;
+		margin: auto;
+		padding-bottom: 5.5rem;
+	}
+	#footer-structure #phone {
+		font-size: 1.1rem;
+		color: #928e8e;
+		text-decoration: none;
+	}
+	#footer-links {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		list-style: none;
+		margin-top: 1.7rem;
+	}
+	#footer-links li {
+		margin: .45rem 0rem;
+		font-weight: 100;
+		font-size: .8rem;
+	}
+	#footer-links li a {
+		color: #575757;
+		text-decoration: none;
+	}
+	#footer-links li a:hover,
+	#footer-structure #phone:hover {
+		text-decoration: underline;
+	}}
