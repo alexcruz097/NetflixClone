@@ -17,7 +17,7 @@ body {
 }
 /* Home section -------------------------------------------*/
 #home {
-	min-height: 59.6vh;
+	min-height: 30rem;
 	background-image: linear-gradient(rgba(5, 5, 5, 4), rgba(0, 0, 0, 0.2)), url(./assets/home-background.jpg);
 	background-size: cover;
 	background-position-x: -16rem;
@@ -30,7 +30,7 @@ hr {
 #home-card {
 	display: flex;
 	flex-direction: column;
-	min-height: 40vh;
+	min-height: 20rem;
 	width: 90vw;
 	align-items: center;
 	margin: auto;
@@ -135,18 +135,24 @@ nav {
 	text-align: center;
 	padding-bottom: 2.1rem;
 }
+.your-tv p{
+position: absolute;
+z-index: 3;
+}
 #your-tv-animation img {
 	position: relative;
+	margin-top: 8.5vh;
 	width: 90vw;
 	z-index: 1;
+	padding-bottom: 2.5vh;
 }
 #your-tv-animation {
 	position: relative;
 }
 #your-tv-animation video {
 	position: absolute;
-	top: 6.7vh;
-	left: 13vw;
+	top: 15vh;
+	left: 12vw;
 	width: 66vw;
 }
 
@@ -187,7 +193,7 @@ nav {
 }
 /* everywhere section -------------------------------------------*/
 .everywhere-card {
-	height: 45.5vh;
+	height: 23rem;
 }
 #everywhere-animation {
 	position: relative;
@@ -207,7 +213,7 @@ nav {
 }
 /* kids section -------------------------------------------*/
 #kids-animation {
-	height: 34.3vh;
+	height: 17rem;
 }
 #kids-animation img {
 	width: 100%;
@@ -217,7 +223,7 @@ nav {
 .question-answer-section {
 	background-color: black;
 	color: white;
-	min-height: 89vh;
+	min-height: 45rem;
 }
 .question-answer-section h1 {
 	text-align: center;
@@ -278,8 +284,7 @@ nav {
 	background-color: black;
 	color: #575757;
 	padding: 50px 18.75px 0px;
-	height: 54vh;
-	padding-bottom: 5.5rem;
+	height: 27rem;
 }
 #footer-structure {
 	width: 75vw;
@@ -320,7 +325,7 @@ nav {
 @media screen and (min-width: 400px) {
 	/* Home section -------------------------------------------*/
 	#home {
-		min-height: 61.1vh;
+		min-height: 32.3rem;
 		background-position-x: -12.5rem;
 	}
 	#home-card {
@@ -365,19 +370,17 @@ nav {
 	/* Your-Tv section -------------------------------------------*/
 
 	.your-tv {
-		padding-bottom: 1.7rem;
+		padding-bottom: 2.5rem;
 	}
 
 	#your-tv-animation video {
 		width: 72vw;
-		position: absolute;
-		top: 4.5rem;
-		left: 3.3rem;
 	}
 	/* Offline section -------------------------------------------*/
 
 	.offline-card img {
 		width: 82vw;
+		padding-bottom: 2vh;
 	}
 	#offline-animation {
 		width: 55vw;
@@ -388,7 +391,8 @@ nav {
 
 	/* everywhere section -------------------------------------------*/
 	.everywhere-card {
-		height: 50vh;
+		/* height: 50vh; */
+		padding-bottom: 11vh;
 	}
 
 	#everywhere-animation img {
@@ -400,7 +404,7 @@ nav {
 	}
 	/* kids section -------------------------------------------*/
 	#kids-animation {
-		height: 41.5vh;
+		/* height: 41.5vh; */
 	}
 	#kids-animation img {
 		width: 90vw;
@@ -408,7 +412,7 @@ nav {
 
 	/* questions section -------------------------------------------*/
 	.question-answer-section {
-		min-height: 70vh;
+		/* min-height: 70vh; */
 	}
 	.question-answer-section h1 {
 		text-align: center;
@@ -425,7 +429,7 @@ nav {
 	/* footer section -------------------------------------------*/
 
 	#footer {
-		height: 52vh;
+		/* height: 52vh; */
 	}
 	#footer-structure {
 		width: 75vw;
@@ -485,14 +489,14 @@ nav {
 
 	/* Home section -------------------------------------------*/
 	#home {
-		min-height: 90vh;
+		min-height: 47.5rem;
 		background-position-x: 49.5%;
 	}
 	#home-card {
 		min-height: 65vh;
 		width: 85vw;
 		align-items: center;
-		padding: 3.7rem 0rem 0rem;
+		padding: 5vh 0rem 0rem 0;
 	}
 	#home-title {
 		font-size: 3.15rem;
@@ -506,7 +510,7 @@ nav {
 	}
 	#email-input,
 	#questions-get-started input {
-		width: 80vw;
+		max-width: 80vw;
 		padding: 1rem 1rem 1rem;
 		border-radius: 3px;
 		border: none;
@@ -527,8 +531,12 @@ nav {
 	/* Your-Tv section -------------------------------------------*/
 
 	.your-tv {
-		padding: 3.8rem 0;
+		padding: 3.5rem 0;
 	}
+	.your-tv p {
+		width: 80%;
+	}
+	
 	#your-tv-animation img {
 		position: relative;
 		width: 80vw;
@@ -536,14 +544,134 @@ nav {
 
 	#your-tv-animation video {
 		position: absolute;
-		top: 8vh;
+		top: 17vh;
 		left: 10vw;
-		width: 60vw;
+		width: 60.5vw;
 	}
 
 	/* Offline section -------------------------------------------*/
 	.offline-card {
 		padding-top: 4rem;
+		padding: 3rem;
+	}
+	.offline-card img {
+		width: 83vw;
+	}
+	#offline-animation {
+		width: 54vw;
+		left: 17.3vw;
+		bottom: 4.7rem;
+		padding: .5rem 0rem;
+	}
+	#download-animation {
+		object-fit: cover;
+	}
+	#offline-animation img {
+		width: 3.144rem;
+		height: 4rem;
+	}
+	#offline-animation-title h4 {
+		font-size: 1rem;
+		text-align: start;
+	}
+	#offline-animation-title h4 span {
+		font-size: .9rem;
+	}
+
+	/* everywhere section -------------------------------------------*/
+	.everywhere-card {
+		height: 58vh;
+		padding-top: 5rem;
+	}
+
+	#everywhere-animation img {
+		width: 82vw;
+	}
+	#everywhere-animation video {
+		left: 15vw;
+		top: 2rem;
+		width: 51vw;
+	}
+	/* kids section -------------------------------------------*/
+	.kids-card {
+		padding-top: 5rem;
+	}
+	#kids-animation {
+		padding-top: .7rem;
+		height: 43vh;
+	}
+	#kids-animation img {
+		width: 82vw;
+	}
+
+	/* questions section -------------------------------------------*/
+	.question-answer-section {
+		width: 80vw;
+		margin: auto;
+		padding-bottom: 1rem;
+	}
+	.question-answer-section h1 {
+		padding: 4.3rem 0rem .6rem;
+		font-size: 2.5rem;
+		width: 80%;
+	}
+	.question {
+		width: 90%;
+		margin: .7rem auto;
+		list-style: none;
+	}
+
+	.question button {
+		font-size: 1.25rem;
+		padding: 1rem 1rem;
+	}
+	/* Answer  */
+	.answer {
+		padding: 1.5rem 1.3rem;
+		font-size: 1.25rem;
+	}
+
+	#questions-get-started h3 {
+		width: 90%;
+		font-size: 1.2rem;
+		padding-top: 2.5rem 1rem;
+	}
+	#questions-get-started input {
+		width: 95%;
+		margin-top: .9rem;
+	}
+
+
+@media screen and (min-width: 591px) {
+	
+	/* Home section -------------------------------------------*/
+	#home {
+		min-height: 44rem;
+	}
+
+	#home-card {
+	
+		max-width: 30.7rem;
+		align-items: center;
+		padding: 5vh 0rem 0rem 0;
+	}
+	#home-card input{
+		max-width: 30.7rem;
+	}
+
+	.your-tv {
+		padding: 2.8rem 0;
+	}
+	.your-tv p {
+		top: 7.4rem;
+		width: 86%;
+	}
+	
+
+	/* Offline section -------------------------------------------*/
+	.offline-card {
+		padding-top: 4rem;
+		padding: 3rem;
 	}
 	.offline-card img {
 		width: 83vw;
@@ -635,35 +763,16 @@ nav {
 
 	/* footer section -------------------------------------------*/
 
-	#footer {
-		height: 2vh;
-	}
-	#footer-structure {
-		width: 75vw;
-		margin: auto;
-		padding-bottom: 5.5rem;
-	}
+#footer{
+	padding-top: 4.6rem;
+}
 	#footer-structure #phone {
-		font-size: 1.1rem;
-		color: #928e8e;
-		text-decoration: none;
+		font-size: 1rem;
+		
 	}
-	#footer-links {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		list-style: none;
-		margin-top: 1.7rem;
-	}
+
 	#footer-links li {
-		margin: .45rem 0rem;
-		font-weight: 100;
-		font-size: .8rem;
+	
+		font-size: .9rem;
 	}
-	#footer-links li a {
-		color: #575757;
-		text-decoration: none;
-	}
-	#footer-links li a:hover,
-	#footer-structure #phone:hover {
-		text-decoration: underline;
-	}}
+}
